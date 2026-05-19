@@ -1,5 +1,6 @@
 # Project OrbitX
 
+![Image Alt](https://github.com/kaveeshanirmal141/Project-OrbitX/blob/main/OrbitX%20Art.jpeg?raw=true)
 **Educational Remote Access Trojan (RAT) Lab**  
 *For Cybersecurity Students & Red Team / Blue Team Training*
 
